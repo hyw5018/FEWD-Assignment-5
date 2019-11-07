@@ -1,0 +1,290 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  background-color: #f0efef;
+  /* max-width:60rem; */
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  /* height:6vh; */
+  background-color: #033048;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 42px;
+  color: white;
+  position: relative;
+  margin: auto;
+}
+
+.white-text {
+  color: white;
+}
+
+.navbartext {
+  color: yellow;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.h-0 {
+  height: 0;
+  overflow: hidden;
+}
+
+.bg-color-dropdown {
+  background-color: #033048;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.margin-left-main {
+  margin: 1vh 15vw;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.indent {
+  margin: 3vh 0 3vh 4.5vw;
+  width: 500px;
+}
+
+.dt-article-size {
+  position: relative;
+  border-bottom: 1px solid;
+  width: 500px;
+  margin-bottom: 2vh;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  width: 500px;
+  color: #033048;
+}
+
+.contentimage img {
+  display: inline-block;
+  box-sizing: 5px;
+  height: 250px;
+  width: 500px;
+}
+
+.blog {
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: 5px;
+  width: 500px;
+  color: #606161;
+}
+
+p::first-letter {
+  float: left;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 60px;
+  padding-right: 10px;
+}
+
+.readmore {
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-left: 400px;
+}
+
+a {
+  color: #033048;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+aside {
+  margin-top: 4vh;
+  max-width: 150px;
+}
+
+.categories {
+  display: inline-grid;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.aboutRelaxr {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  overflow-wrap: break-word;
+  font-size: 14px;
+}
+
+.font-size {
+  font-size: 16px;
+}
+
+.adunit img {
+  height: 150px;
+  width: 150px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  background-color: #f9e42e;
+  position: relative;
+}
+
+.signup {
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  background-color: #033048;
+  border-radius: 5px;
+  width: 10rem;
+  height: auto;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin: 3vh auto;
+}
+
+.container2 {
+  background-color: #121212;
+}
+
+.relaxr {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f9e42e;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.copyright {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin: 1.5vh auto;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  .mobile-only {
+    display: block;
+  }
+  .mobile-font-size {
+    font-size: 24px;
+  }
+
+  .mobile-font-size-menu {
+    font-size: 36px;
+    padding-left: 10px;
+  }
+
+  .mobile-position {
+    margin: 0 auto;
+  }
+
+  .mobile-article-size {
+    position: relative;
+    border-bottom: 1px solid;
+    width: 350px;
+    margin-bottom: 1vh;
+  }
+  .mobile-center {
+    margin: auto;
+  }
+
+  .mobile-content-size {
+    font-size: 12px;
+    font-weight: 300;
+    box-sizing: 2px;
+    width: 350px;
+    color: #606161;
+  }
+
+  .mobile-title {
+    font-size: 24px;
+    width: 350px;
+  }
+
+  .mobile-size-image img {
+    display: inline-block;
+    box-sizing: 5px;
+    height: 150px;
+    width: 350px;
+  }
+
+  .mobile-indent-size {
+    margin: 1vh 1vw 1vh 1vw;
+    width: 350px;
+  }
+
+  .mobile-readmore-size {
+    font-weight: 600;
+    font-size: 8px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-left: 250px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 770px) {
+  .desktop-only {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    width: 25%;
+  }
+}
